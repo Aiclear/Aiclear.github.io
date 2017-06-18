@@ -89,9 +89,13 @@ body {
     font-weight: 700;
     line-height: 35px;
 }
+
+
 /* end common  */
 
+
 /* self */
+
 .resume-left .self-introduction {
     width: 100%;
     height: 15%;
@@ -108,10 +112,13 @@ body {
     text-align: right;
     font-size: 14px;
 }
+
+
 /* end self */
 
 
 /* ------job-------  */
+
 .resume-left .job-experience {
     width: 100%;
     height: 40%;
@@ -165,10 +172,13 @@ body {
     font-size: 14px;
     text-align: left;
 }
+
+
 /* -------job end------- */
 
 
 /* education */
+
 .resume-left .education {
     width: 100%;
     height: 15%;
@@ -191,10 +201,15 @@ body {
     font-size: 14px;
 }
 
+
 /* enducation end */
+
+
 /* left end */
 
+
 /* right css */
+
 .resume-right {
     width: 300px;
     height: 100%;
@@ -207,6 +222,7 @@ body {
 
 
 /* photo css */
+
 .resume-right .photo {
     height: 22%;
 }
@@ -215,10 +231,13 @@ body {
     width: 100%;
     height: 100%;
 }
+
+
 /* photo end */
 
 
 /* contact css */
+
 .contact {
     width: 100%;
     height: 15%;
@@ -273,6 +292,8 @@ body {
     border-radius: 50px;
     background: white;
 }
+
+
 /* contact end */
 
 
@@ -458,6 +479,7 @@ body {
     transform: rotate(90deg);
 }
 
+
 /* language */
 
 .life-language {
@@ -509,7 +531,9 @@ body {
     background: rgb(5, 125, 203);
 }
 
+
 /* social contact */
+
 .qq,
 .wechat,
 .github-host {
@@ -548,4 +572,6 @@ body {
     font-size: 14px;
     line-height: 35px;
 }
+
+
 /* end */
