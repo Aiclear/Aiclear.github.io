@@ -438,7 +438,7 @@ body {
     transform: rotate(100deg);
 }
 
-.skill-c .left .leftcircle, 
+.skill-c .left .leftcircle,
 .skill-java .left .leftcircle {
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
