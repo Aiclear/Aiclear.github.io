@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(193, 194, 196);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.resume {
+    width: 885px;
+    height: 1250px;
+    margin: 20px auto;
+    box-shadow: 10px 1px 15px #333333;
+}
+
+
+/* left */
+
+.resume-left {
+    width: 580px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    float: left;
+    overflow: hidden;
+}
+
+.resume-left .base-info {
+    width: 100%;
+    height: 25%;
+    border-bottom: 3px solid rgb(59, 201, 245);
+}
+
+.logo,
+.logo-emacs {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(59, 201, 245);
+    border-radius: 50px;
+}
+
+.base-info .name {
+    position: relative;
+    top: 50px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.name>p:nth-child(1) {
+    font-family: cursive, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    opacity: 0.8;
+}
+
+.name>p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(59, 201, 245);
+}
+
+.saying {
+    position: relative;
+    top: 90px;
+    left: 310px;
+    width: 240px;
+    text-align: left;
+    letter-spacing: 1.1px;
+}
+
+
+/* education job self common css */
+
+.self-introduction div.self-title,
+.job-experience div.job-ex-title,
+.education div.edu-title {
+    margin-top: 15px;
+    padding-right: 50px;
+    background: rgb(229, 229, 229);
+    text-align: right;
+}
+
+.education div.edu-title span,
+.job-experience div.job-ex-title span,
+.self-introduction span {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+}
+/* end common  */
+
+/* self */
+.resume-left .self-introduction {
+    width: 100%;
+    height: 15%;
+    border-bottom: 3px solid rgb(59, 201, 245);
+}
+
+.self-introduction .self-content {
+    width: 88%;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.self-introduction .self-content p {
+    text-align: left;
+    font-size: 14px;
+    text-indent: 2em;
+    letter-spacing: 1.1px;
+}
+/* end self */
+
+
+/* ------job-------  */
+.resume-left .job-experience {
+    width: 100%;
+    height: 40%;
+    border-bottom: 3px solid rgb(59, 201, 245);
+}
+
+.job-ex-content {
+    width: 100%;
+    height: 90%;
+    margin-top: 15px;
+    padding-right: 50px;
+}
+
+.job-ex-content .row-1,
+.job-ex-content .row-2,
+.job-ex-content .row-3 {
+    height: 25%;
+    width: 100%;
+    border-top: 1px solid whitesmoke;
+    padding-top: 2px;
+    margin-top: 2px;
+    float: left;
+}
+
+.job-ex-content .row-2 {
+    height: 45%;
+}
+
+.job-ex-content .row-1 .col-1,
+.job-ex-content .row-2 .col-1,
+.job-ex-content .row-3 .col-1 {
+    width: 25%;
+    height: 100%;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+}
+
+.job-ex-content .row-1 .col-2,
+.job-ex-content .row-2 .col-2,
+.job-ex-content .row-3 .col-2 {
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+    text-align: left;
+    text-indent: 2em;
+    letter-spacing: 1.1px;
+}
+
+.job-ex-content .row-1 .col-1 span,
+.job-ex-content .row-2 .col-1 span,
+.job-ex-content .row-3 .col-1 span {
+    font-size: 16px;
+    color: rgb(30, 40, 50);
+    font-weight: bold;
+}
+
+.job-ex-content .row-1 .col-2 p,
+.job-ex-content .row-2 .col-2 p,
+.job-ex-content .row-3 .col-2 p {
+    font-size: 14px;
+    text-align: left;
+}
+/* -------job end------- */
+
+
+/* education */
+.resume-left .education {
+    width: 100%;
+    height: 15%;
+}
+
+.education .edu-content {
+    width: 91%;
+    height: 100px;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+.education .edu-content span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.edu-content p {
+    font-size: 14px;
+}
+
+/* enducation end */
+/* left end */
+
+/* right css */
+.resume-right {
+    width: 300px;
+    height: 100%;
+    margin-left: 585px;
+    background: rgb(229, 229, 229);
+    -moz-box-shadow: -2px 0px 15px #333333;
+    -webkit-box-shadow: -2px 0px 15px #333333;
+    box-shadow: -2px 0px 15px #333333;
+}
+
+
+/* photo css */
+.resume-right .photo {
+    height: 22%;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+/* photo end */
+
+
+/* contact css */
+.contact {
+    width: 100%;
+    height: 15%;
+}
+
+.phone,
+.website,
+.email {
+    height: 33%;
+}
+
+.phone {
+    background: rgb(30, 40, 115);
+}
+
+.website {
+    background: rgb(5, 125, 203);
+}
+
+.email {
+    background: rgb(0, 186, 243);
+}
+
+.phone .col-0,
+.website .col-0,
+.email .col-0 {
+    width: 80px;
+    height: 100%;
+    -moz-box-shadow: 1px 0 2px #333333;
+    -webkit-box-shadow: 1px 0 2px #333333;
+    box-shadow: 1px 0 2px #333333;
+    float: left;
+    margin-right: 25px;
+}
+
+.phone .col-1 span,
+.website .col-1 span,
+.email .col-1 span {
+    font-size: 15px;
+    line-height: 60px;
+    color: white;
+}
+
+.phone div img,
+.website div img,
+.email div img {
+    position: relative;
+    top: 13px;
+    left: 20px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: white;
+}
+/* contact end */
+
+
+/* skill css */
+
+.skill {
+    height: 33%;
+    border-bottom: 2px solid white;
+}
+
+.skill-title {
+    padding: 25px 0 0 10px;
+}
+
+.skill-title span {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+/* skill first line */
+
+.skill-linux,
+.skill-vim,
+.skill-git,
+.skill-c,
+.skill-java,
+.skill-javascript,
+.skill-mysql,
+.skill-sqlserver {
+    width: 65px;
+    height: 65px;
+    box-shadow: 2px 2px 5px #333333;
+    border-radius: 50%;
+}
+
+.tool,
+.language,
+.databases {
+    width: 100%;
+    height: 120px;
+}
+
+.title {
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.skill-linux {
+    background: url(../images/linux.png) 7px 10px no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.skill-vim {
+    background: url(../images/vim.png) 7px 10px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 100px;
+}
+
+.skill-git {
+    background: url(../images/github.png) 7px 10px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 190px;
+}
+
+.skill-c {
+    background: url(../images/c.png) 7px 10px no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.skill-java {
+    background: url(../images/java.png) 10px 7px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 100px;
+}
+
+.skill-javascript {
+    background: url(../images/javascript.png) 7px 15px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 190px;
+}
+
+.skill-mysql {
+    background: url(../images/mySql.png) 7px 10px no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.skill-sqlserver {
+    background: url(../images/sqlServer.png) 7px 10px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 100px;
+}
+
+.left {
+    width: 65px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.left .leftcircle {
+    width: 60px;
+    height: 60px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 3px solid rgb(5, 125, 203);
+    border-left: 3px solid rgb(5, 125, 203);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    /* 旋转45度 */
+}
+
+.right {
+    width: 65px;
+    height: 100%;
+}
+
+.right .rightcircle {
+    width: 60px;
+    height: 60px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 3px solid rgb(5, 125, 203);
+    border-right: 3px solid rgb(5, 125, 203);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /* 旋转45度 */
+}
+
+.skill-linux .left .leftcircle,
+.skill-vim .left .leftcircle {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.skill-git .left .leftcircle {
+    -webkit-transform: rotate(100deg);
+    -moz-transform: rotate(100deg);
+    -o-transform: rotate(100deg);
+    transform: rotate(100deg);
+}
+
+.skill-c .left .leftcircle, 
+.skill-java .left .leftcircle {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.skill-javascript .left .leftcircle {
+    transform: rotate(130deg);
+}
+
+.skill-mysql .left .leftcircle,
+.skill-sqlserver .left .leftcircle {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* language */
+
+.life-language {
+    border-bottom: 2px solid white;
+}
+
+.ll-title,
+.sc-title {
+    padding: 20px 0 0 10px;
+}
+
+.ll-title span,
+.sc-title span {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.english,
+.japanese {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.english span,
+.japanese span {
+    line-height: 50px;
+    font-size: 16px;
+    float: left;
+}
+
+.progress-bar {
+    width: 150px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    left: 90px;
+    background: snow;
+}
+
+.english .progress-fg-bar {
+    height: 100%;
+    width: 70px;
+    background: rgb(5, 125, 203);
+}
+
+.japanese .progress-fg-bar {
+    height: 100%;
+    width: 50px;
+    background: rgb(5, 125, 203);
+}
+
+/* social contact */
+.qq,
+.wechat,
+.github-host {
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.qq-img,
+.wechat-img,
+.github-host-img {
+    width: 35px;
+    height: 35px;
+    margin-right: 35px;
+    float: left;
+}
+
+.qq-img {
+    background: url(../images/QQ.png) no-repeat;
+    background-size: 35px;
+}
+
+.wechat-img {
+    background: url(../images/wechat.png) no-repeat;
+    background-size: 35px;
+}
+
+.github-host-img {
+    background: url(../images/github_1.png) no-repeat;
+    background-size: 35px;
+}
+
+.qq span,
+.wechat span,
+.github-host span {
+    font-size: 14px;
+    line-height: 35px;
+}
+/* end */
