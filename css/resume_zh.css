@@ -10,7 +10,7 @@ body {
 
 .resume {
     width: 885px;
-    height: 1250px;
+    height: 1280px;
     margin: 20px auto;
     box-shadow: 10px 1px 15px #333333;
 }
@@ -92,9 +92,13 @@ body {
     font-weight: 700;
     line-height: 35px;
 }
+
+
 /* end common  */
 
+
 /* self */
+
 .resume-left .self-introduction {
     width: 100%;
     height: 15%;
@@ -113,10 +117,13 @@ body {
     text-indent: 2em;
     letter-spacing: 1.1px;
 }
+
+
 /* end self */
 
 
 /* ------job-------  */
+
 .resume-left .job-experience {
     width: 100%;
     height: 40%;
@@ -180,10 +187,13 @@ body {
     font-size: 14px;
     text-align: left;
 }
+
+
 /* -------job end------- */
 
 
 /* education */
+
 .resume-left .education {
     width: 100%;
     height: 15%;
@@ -206,10 +216,15 @@ body {
     font-size: 14px;
 }
 
+
 /* enducation end */
+
+
 /* left end */
 
+
 /* right css */
+
 .resume-right {
     width: 300px;
     height: 100%;
@@ -222,6 +237,7 @@ body {
 
 
 /* photo css */
+
 .resume-right .photo {
     height: 22%;
 }
@@ -230,10 +246,13 @@ body {
     width: 100%;
     height: 100%;
 }
+
+
 /* photo end */
 
 
 /* contact css */
+
 .contact {
     width: 100%;
     height: 15%;
@@ -288,13 +307,15 @@ body {
     border-radius: 50px;
     background: white;
 }
+
+
 /* contact end */
 
 
 /* skill css */
 
 .skill {
-    height: 33%;
+    height: 37%;
     border-bottom: 2px solid white;
 }
 
@@ -320,7 +341,7 @@ body {
 .skill-sqlserver {
     width: 65px;
     height: 65px;
-    box-shadow: 2px 2px 5px #333333;
+    box-shadow: 1px 1px 2px #333333;
     border-radius: 50%;
 }
 
@@ -328,7 +349,7 @@ body {
 .language,
 .databases {
     width: 100%;
-    height: 120px;
+    height: 135px;
 }
 
 .title {
@@ -337,65 +358,13 @@ body {
     font-weight: 500;
 }
 
-.skill-linux {
-    background: url(../images/linux.png) 7px 10px no-repeat;
-    background-size: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
+.percent-display {
+    text-align: center;
+    margin-top: 1px;
 }
 
-.skill-vim {
-    background: url(../images/vim.png) 7px 10px no-repeat;
-    background-size: 50px;
-    border-radius: 50%;
-    margin-top: -65px;
-    margin-left: 100px;
-}
-
-.skill-git {
-    background: url(../images/github.png) 7px 10px no-repeat;
-    background-size: 50px;
-    border-radius: 50%;
-    margin-top: -65px;
-    margin-left: 190px;
-}
-
-.skill-c {
-    background: url(../images/c.png) 7px 10px no-repeat;
-    background-size: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.skill-java {
-    background: url(../images/java.png) 10px 7px no-repeat;
-    background-size: 50px;
-    border-radius: 50%;
-    margin-top: -65px;
-    margin-left: 100px;
-}
-
-.skill-javascript {
-    background: url(../images/javascript.png) 7px 15px no-repeat;
-    background-size: 50px;
-    border-radius: 50%;
-    margin-top: -65px;
-    margin-left: 190px;
-}
-
-.skill-mysql {
-    background: url(../images/mySql.png) 7px 10px no-repeat;
-    background-size: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.skill-sqlserver {
-    background: url(../images/sqlServer.png) 7px 10px no-repeat;
-    background-size: 50px;
-    border-radius: 50%;
-    margin-top: -65px;
-    margin-left: 100px;
+.percent-display span {
+    font-size: 14px;
 }
 
 .left {
@@ -415,12 +384,11 @@ body {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transform: rotate(-45deg);
-    /* 旋转45度 */
+    transform: rotate(45deg);
 }
 
 .right {
-    width: 65px;
+    width: 35px;
     height: 100%;
 }
 
@@ -435,25 +403,85 @@ body {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    /* 旋转45度 */
+}
+
+.skill-linux {
+    background: url(../images/linux.png) 7px 10px no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.skill-vim {
+    background: url(../images/vim.png) 7px 10px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 115px;
+}
+
+.skill-git {
+    background: url(../images/github.png) 7px 10px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 220px;
+}
+
+.skill-c {
+    background: url(../images/c.png) 7px 10px no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.skill-java {
+    background: url(../images/java.png) 10px 7px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 115px;
+}
+
+.skill-javascript {
+    background: url(../images/javascript.png) 7px 15px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 220px;
+}
+
+.skill-mysql {
+    background: url(../images/mySql.png) 7px 10px no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.skill-sqlserver {
+    background: url(../images/sqlServer.png) 7px 10px no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+    margin-top: -65px;
+    margin-left: 115px;
 }
 
 .skill-linux .left .leftcircle,
 .skill-vim .left .leftcircle {
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    -o-transform: rotate(60deg);
-    transform: rotate(60deg);
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -o-transform: rotate(140deg);
+    transform: rotate(50deg);
 }
 
 .skill-git .left .leftcircle {
-    -webkit-transform: rotate(100deg);
-    -moz-transform: rotate(100deg);
-    -o-transform: rotate(100deg);
-    transform: rotate(100deg);
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -o-transform: rotate(140deg);
+    transform: rotate(140deg);
 }
 
-.skill-c .left .leftcircle, 
+.skill-c .left .leftcircle,
 .skill-java .left .leftcircle {
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
@@ -462,7 +490,7 @@ body {
 }
 
 .skill-javascript .left .leftcircle {
-    transform: rotate(130deg);
+    transform: rotate(135deg);
 }
 
 .skill-mysql .left .leftcircle,
@@ -473,15 +501,17 @@ body {
     transform: rotate(90deg);
 }
 
+
 /* language */
 
 .life-language {
     border-bottom: 2px solid white;
+    height: 10%;
 }
 
 .ll-title,
 .sc-title {
-    padding: 20px 0 0 10px;
+    padding: 15px 0 0 10px;
 }
 
 .ll-title span,
@@ -492,13 +522,13 @@ body {
 
 .english,
 .japanese {
-    height: 50px;
+    height: 40px;
     padding-left: 10px;
 }
 
 .english span,
 .japanese span {
-    line-height: 50px;
+    line-height: 40px;
     font-size: 16px;
     float: left;
 }
@@ -507,8 +537,8 @@ body {
     width: 150px;
     height: 10px;
     position: relative;
-    top: 20px;
-    left: 90px;
+    top: 17px;
+    left: 50px;
     background: snow;
 }
 
@@ -524,7 +554,9 @@ body {
     background: rgb(5, 125, 203);
 }
 
+
 /* social contact */
+
 .qq,
 .wechat,
 .github-host {
@@ -563,4 +595,6 @@ body {
     font-size: 14px;
     line-height: 35px;
 }
+
+
 /* end */
