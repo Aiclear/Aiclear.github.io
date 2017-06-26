@@ -1,24 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <h4>英文版简历相关说明</h4>
-    <p>
-        因为本人的英文不是特别的好，所以呢英文版中的英语的用法或者词汇上会后很多错误，
-        不过这个版本只是一个模板，并不会用来作为面试时的正式用途，所以就不在对错误进行
-        更改了，之后的中文版才是面试时正式的使用版。如果你想参考，请随意。
-        <a href="Resume/resume-en.html">My Resume[en]</a>
-    </p>
+---
+layout: default
+title: Home
+---
 
-    <h4>中文版简历</h4>
-    <p>
-        此简历还有很多不完善的地方，如果你发现了一些错误，请不要吝啬，请告诉我，谢谢哦！
-        <br/>
-        email：xinzheyyu@gmail.com
-        <a href="Resume/resume-zh.html">My Resume[zh]</a>
-    </p>
-</body>
-</html>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}/{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
